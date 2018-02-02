@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index.html</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.4.3/pixi.min.js"></script>
+
+</head>
+<body>
+    <div class="layout" style="display: none">
+        <div class="background-image"></div>
+        <div class="device-wrapper">
+            <div class="device">
+                <div class="left-gear-wrapper">
+                    <div class="left-gear"></div>
+                </div>
+                <div class="right-gear-wrapper">
+                    <div class="right-gear"></div>
+                </div>
+                <div class="right-gear-small-wrapper">
+                    <div class="right-gear-small"></div>
+                </div>
+                <div class="device-background"></div>
+                <div class="button-border"></div>
+                <div class="button"></div>
+                <div class="button-3d-effect"></div>
+                <div class="plus"></div>
+                <div class="meter">
+                    <div class="meter-back"></div>
+                    <div class="meter-hover-wrapper">
+                        <div class="meter-hover"></div>
+                    </div>
+                    <div class="prevent-meter-hover"></div>
+                    <div class="meter-arrow-wrapper">
+                        <div class="meter-arrow"></div>
+                    </div>
+                    <div class="meter-front">
+                        <div class="counters"></div>
+                        <div class="meter-crutch"></div>
+                    </div>
+                </div>
+                <div class="device-tube">
+                    <div class="device-tube-front"></div>
+                    <div class="device-tube-back"></div>
+                    <div class="click-handler"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        if(sessionStorage.getItem("in-cache") !== "yes") {
+            document.body.style.backgroundColor = "#fff";
+        }
+    </script>
+    <script type="application/javascript" src="main.js"></script>
+</body>
+</html>
